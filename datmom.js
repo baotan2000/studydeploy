@@ -1,5 +1,5 @@
 const express = require("express");
-const open = require("open").default;
+// const open = require("open").default;
 const app = express();
 
 // Quotes troll hài hước
@@ -116,5 +116,5 @@ app.get("/", (req, res) => {
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`✅ Troll server running on port ${PORT}`);
-  open(`http://localhost:${PORT}`);
+//   open(`http://localhost:${PORT}`);
 });

@@ -1,15 +1,14 @@
 const express = require("express");
 const cors = require("cors");
+
 const app = express();
-const PORT = 5000;
-
 app.use(cors());
-app.use(express.json());
 
+// Endpoint test
 app.get("/", (req, res) => {
-  res.send("🚀 Server đang chạy ngon lành!");
+  res.send("🚀 Server chạy ngon lành!");
 });
 
-app.listen(PORT, () => {
-  console.log(`✅ Server đang chạy tại http://localhost:${PORT}`);
-});
+// Lưu ý: Render sẽ tự cấp PORT qua biến môi trường
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => console.log(`✅ Server running on port ${PORT}`));

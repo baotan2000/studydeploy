@@ -212,7 +212,7 @@
 //   open(`http://localhost:${PORT}`);
 // });
 const express = require("express");
-const open = require("open").default;
+// const open = require("open").default;
 
 const app = express();
 
@@ -294,5 +294,5 @@ app.get("/", (req, res) => {
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`✅ Server running on port ${PORT}`);
-  open(`http://localhost:${PORT}`);
+  // open(`http://localhost:${PORT}`);
 });

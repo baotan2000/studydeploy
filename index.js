@@ -6,7 +6,7 @@ app.use(cors());
 
 // Endpoint test
 app.get("/", (req, res) => {
-  res.send("🚀 Server chạy ngon lành!");
+  res.send("🌷 Yêu chị Cải nhiều nhiều 💖💖");
 });
 
 // Lưu ý: Render sẽ tự cấp PORT qua biến môi trường
